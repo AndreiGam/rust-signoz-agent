@@ -43,10 +43,12 @@ endpoint = "http://localhost:4318/v1/logs"
 
 ### Configuration Options
 
-| Parameter   | Description                                  | Default Value                  |
-|-------------|----------------------------------------------|--------------------------------|
-| `log_files` | Array of log file paths to monitor           | (none, required)               |
-| `endpoint`  | SigNoz OTLP HTTP endpoint                    | "http://localhost:4318/v1/logs" |
+| Parameter       | Description                                  | Default Value                      |
+|-----------------|----------------------------------------------|------------------------------------|
+| `log_files`     | Array of log file paths to monitor           | (none, required)                   |
+| `endpoint`      | SigNoz OTLP HTTP endpoint                    | "http://localhost:4318/v1/logs"    |
+| `service_name`  | Service name reported to SigNoz              | "rust-signoz-agent"                |
+| `host_name`     | Host name reported to SigNoz                 | System hostname (auto-detected)    |
+| `rate_limit`    | Maximum logs to send per second (optional)   | 100                                |
 
 > **Note**: When first run without a config file, the agent will interactively prompt for these values.
-
