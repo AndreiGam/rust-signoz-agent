@@ -1,0 +1,19 @@
+[package]
+name = "rust-signoz-agent"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0"
+chrono = "0.4"
+dialoguer = "0.10"
+governor = "0.5"
+hostname = "0.3"
+nonzero_ext = "0.3"
+regex = "1.5"
+reqwest = { version = "0.11", features = ["blocking", "json"] }
+serde = { version = "1.0", features = ["derive"] }
+signal-hook = "0.3"
+toml = "0.7"
+whoami = "1.4"
+futures = "0.3"
